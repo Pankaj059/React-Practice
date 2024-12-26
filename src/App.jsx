@@ -1,15 +1,14 @@
 import { useState } from 'react'
 import React from 'react'
 import './App.css'
-import Form from './components/Form'
-import { Heading } from '@chakra-ui/react'
+import SignInForm from './components/SignInForm'
 
 
 function App() {
 
   return (
     <>
-    <Form />
+    <SignInForm />
 
     </>
   )

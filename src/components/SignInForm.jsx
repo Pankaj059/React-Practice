@@ -4,8 +4,8 @@ import "../App.css";
 import eyeIcon from "../assets/img/eye.png";
 import userIcon from "../assets/img/user.png";
 import passIcon from "../assets/img/padlock.png";
-
-const Form = () => {
+import { Form } from "react-router";
+const SignInForm = () => {
   return (
     <>
       <div className="container">
@@ -57,8 +57,13 @@ const Form = () => {
           </div>
         </form>
       </div>
+
+      {/* <Form>
+        
+      </Form> */}
     </>
+
   );
 };
 
-export default Form;
+export default SignInForm;
