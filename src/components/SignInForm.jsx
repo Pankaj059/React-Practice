@@ -4,7 +4,7 @@ import "../App.css";
 import eyeIcon from "../assets/img/eye.png";
 import userIcon from "../assets/img/user.png";
 import passIcon from "../assets/img/padlock.png";
-import { Form } from "react-router";
+import { Form} from "react-router";
 const SignInForm = () => {
   return (
     <>
@@ -21,6 +21,7 @@ const SignInForm = () => {
               <input
                 type="email"
                 name="username"
+                id="username"
                 placeholder="john@example.com"
               />
             </div>
@@ -29,11 +30,12 @@ const SignInForm = () => {
             <img src={passIcon} alt="" />
           <div className="input-container">
             <div className="password-input">
-              <label htmlFor="username">Password :</label>
+              <label htmlFor="password">Password :</label>
               <input
                 type="password"
                 name="pass"
                 placeholder="********"
+                id="password"
                 required
                 />
               <span className="icon">
@@ -58,9 +60,6 @@ const SignInForm = () => {
         </form>
       </div>
 
-      {/* <Form>
-        
-      </Form> */}
     </>
 
   );
