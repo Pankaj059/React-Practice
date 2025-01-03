@@ -10,6 +10,7 @@ import NavBar from './components/NavBar.jsx'
 import RandomDog from './components/RandomDog.jsx'
 import CountryCard from './components/CountryCard.jsx'
 import Test from './components/Test.jsx'
+import CountryDetail from './components/CountryDetail.jsx'
 
 
 
@@ -33,8 +34,10 @@ const router = createBrowserRouter([{
   {
     path: '/test',
     element : <Test/>
+  },
+  {path : '/countryDetail',
+  element : <CountryDetail />
   }
-
 ]
 }])
 
